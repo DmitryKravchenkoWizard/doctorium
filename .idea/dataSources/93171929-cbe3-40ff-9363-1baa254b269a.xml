@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="doctorium_development@localhost">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.43">
+    <root id="1">
+      <ServerVersion>12.12</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="development_lg_activity_service"/>
+    <database id="3" parent="1" name="doctorium_development">
+      <Current>1</Current>
+    </database>
+    <database id="4" parent="1" name="doctorium_test"/>
+    <database id="5" parent="1" name="hotheal_dev"/>
+    <database id="6" parent="1" name="hotheal_test"/>
+    <database id="7" parent="1" name="hothealth"/>
+    <database id="8" parent="1" name="hothealth_dev"/>
+    <database id="9" parent="1" name="opp-test"/>
+    <database id="10" parent="1" name="order-printer"/>
+    <database id="11" parent="1" name="order-printer-emaile"/>
+    <database id="12" parent="1" name="order-printer-emailer"/>
+    <database id="13" parent="1" name="order-printer-test"/>
+    <database id="14" parent="1" name="postgres"/>
+    <database id="15" parent="1" name="template0"/>
+    <database id="16" parent="1" name="template1"/>
+    <schema id="17" parent="3" name="information_schema"/>
+    <schema id="18" parent="3" name="pg_catalog"/>
+    <schema id="19" parent="3" name="public">
+      <Current>1</Current>
+    </schema>
+  </database-model>
+</dataSource>
