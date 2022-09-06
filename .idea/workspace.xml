@@ -2,8 +2,74 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d2ec34a-9eb3-423e-a271-1d17287c2c46" name="Changes" comment="add and config rubocop, database, devise">
+      <change afterPath="$PROJECT_DIR$/app/controllers/achievements_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/additional_infos_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/clinics_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/doctor_reviews_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/doctors_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/patients_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/professions_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/clinic.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/clinic_achievement.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/clinic_doctor.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/clinic_review.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/doctor.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/doctor_achievement.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/doctor_review.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/patient.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/profession.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20220830072911_create_professions.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20220830073157_create_doctors.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20220830073239_create_clinics.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20220830073303_create_patients.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20220830073305_create_clinic_doctors.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20220830073307_create_clinic_achievements.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20220830073309_create_clinic_reviews.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20220830074150_create_doctor_achievements.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20220830074155_create_doctor_reviews.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20220901085920_add_profession_fk_col_to_doctors.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20220901174151_add_clinic_achievements_fk_col_to_clinics.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20220901174152_add_doctor_achievements_fk_col_to_doctors.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/controllers/achievements_controller_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/controllers/additional_infos_controller_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/controllers/clinics_controller_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/controllers/doctor_reviews_controller_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/controllers/doctors_controller_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/controllers/patients_controller_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/controllers/professions_controller_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/factories/clinic_achievements.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/factories/clinic_doctors.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/factories/clinic_reviews.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/factories/clinics.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/factories/doctor_achievements.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/factories/doctor_reviews.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/factories/doctors.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/factories/patients.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/factories/professions.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/factories/users.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/models/clinic_achievement_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/models/clinic_doctor_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/models/clinic_review_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/models/clinic_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/models/doctor_achievement_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/models/doctor_review_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/models/doctor_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/models/patient_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/models/profession_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/01eba755-2fdd-4d35-b1bc-05dddfee5406.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/01eba755-2fdd-4d35-b1bc-05dddfee5406.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/93171929-cbe3-40ff-9363-1baa254b269a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/93171929-cbe3-40ff-9363-1baa254b269a.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/doctorium.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/doctorium.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/cors.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/cors.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20220826104951_devise_create_users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20220826104951_devise_create_users.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/rails_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/rails_helper.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +96,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/dmitry/RubymineProjects/doctorium/app/models",
     "nodejs_package_manager_path": "npm",
     "ruby.rails.projectView.checked": "true",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   },
   "keyToStringList": {
@@ -40,6 +108,15 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/models" />
+      <recent name="$PROJECT_DIR$/db/migrate" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/spec" />
+    </key>
+  </component>
   <component name="RunManager" selected="Rails.Development: doctorium">
     <configuration name="Development: doctorium" type="RailsRunConfigurationType" factoryName="Rails">
       <module name="doctorium" />
@@ -150,6 +227,10 @@
       <updated>1661418106713</updated>
       <workItem from="1661418107978" duration="8425000" />
       <workItem from="1661496941528" duration="10237000" />
+      <workItem from="1661839120292" duration="36102000" />
+      <workItem from="1662104847728" duration="6000" />
+      <workItem from="1662104875420" duration="2242000" />
+      <workItem from="1662367131253" duration="30222000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1661432482172</created>
